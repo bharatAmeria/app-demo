@@ -1,11 +1,9 @@
-# Use Python 3.10 as the base image
-FROM python:3.10
+FROM python:3.9
 
-# Set the working directory inside the container
-ADD runPipeline.py .
+WORKDIR /app
 
-# Copy the requirements file first and install dependencies
+COPY . /app
+
 RUN pip install -r requirements.txt
 
-# Define the command to run the Flask application
-CMD ["python", "/runPipeline.py"]
+CMD ["python3", "app.py"]
