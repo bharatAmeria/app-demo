@@ -10,9 +10,9 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/bharatAmeria/sms_spam_classifier.git
+    repoURL: https://github.com/bharatAmeria/app-demo.git
     targetRevision: HEAD
-    path:
+    path: path
 
   destination:
     server: https://kubernetes.default.svc
