@@ -25,3 +25,18 @@ spec:
     automated:
       prune: true
       selfHeal: true
+
+  canaryStrategy:
+    canary:
+      steps:
+        - setWeight: 10
+          pause: { }
+        - setWeight: 20
+          pause: { }
+        - setWeight: 30
+          pause: { }
+        - setWeight: 40
+          pause: { }
+        - setWeight: 50
+    stable:
+      replicas: 50
