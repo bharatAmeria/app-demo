@@ -12,7 +12,7 @@ spec:
   source:
     repoURL: https://github.com/bharatAmeria/app-demo.git
     targetRevision: HEAD
-    path: path
+    path: dev
 
   destination:
     server: https://kubernetes.default.svc
@@ -25,18 +25,3 @@ spec:
     automated:
       prune: true
       selfHeal: true
-
-  canaryStrategy:
-    canary:
-      steps:
-        - setWeight: 10
-          pause: { }
-        - setWeight: 20
-          pause: { }
-        - setWeight: 30
-          pause: { }
-        - setWeight: 40
-          pause: { }
-        - setWeight: 50
-    stable:
-      replicas: 50
