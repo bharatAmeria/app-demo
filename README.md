@@ -12,9 +12,9 @@ In this demo I created a simple html file.
 5. step 5:- Accessing the Argo CD UI page
 6. step 6:- Prepare canary rollout strategy in myapp-canary.yaml file in which I create 5 replica sets of the application
 
-![Alt Text](images/Screenshot 2024-03-18 at 9.44.26 AM.png)
-![Alt Text](images/Screenshot 2024-03-18 at 9.32.27 AM.png)
-![Alt Text](images/Screenshot 2024-03-18 at 9.32.57 AM.png)
+<img alt="Alt Text" src="images/Screenshot 2024-03-18 at 9.44.26 AM.png"/>
+<img alt="Alt Text" src="images/Screenshot 2024-03-18 at 9.32.27 AM.png"/>
+<img alt="Alt Text" src="images/Screenshot 2024-03-18 at 9.32.57 AM.png"/>
 
 ## Argo CD Commands for performing the above steps
 * First of all, Run the Docker Desktop in not then install
@@ -26,7 +26,7 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 * After Installation run command
  kubectl get svc -n argocd 
 this command give you the information of argo CD pods which are currently running on k8s
-![Alt Text](images/Screenshot 2024-03-18 at 9.59.39 AM.png)
+  <img alt="Alt Text" src="images/Screenshot 2024-03-18 at 9.59.39 AM.png"/>
 
 * Now run command
 --> kubectl port-forward -n argocd svc/argocd-server 8080:443
